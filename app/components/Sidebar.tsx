@@ -7,7 +7,8 @@ export type SidebarPage =
   | "ingredients"
   | "recipes"
   | "menu"
-  | "stock";
+  | "stock"
+  | "compliance";
 
 type SidebarProps = {
   active: SidebarPage;
@@ -124,6 +125,7 @@ export default function Sidebar({
           </span>
           Stock counts
         </Link>
+        <Link className={navClass("compliance")} href="/compliance"><span className="nav-icon">✓</span> Compliance</Link>
       </nav>
 
       <div className="sidebar-footer">
